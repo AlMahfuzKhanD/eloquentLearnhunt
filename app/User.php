@@ -7,4 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     //
+   protected $fillable = [
+       'name','email'
+    ];
+
+    public function phone(){
+        return $this->hasOne('App\Phone');
+    }
 }
