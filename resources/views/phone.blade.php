@@ -81,18 +81,19 @@
                         <thead>
                           <tr>
                             <th>ID</th>
+                            <th>Phone</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone</th>
                           </tr>
                         </thead>
                         <tbody>
-                            @foreach ($user as $item)
+                            @foreach ($phone as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
-                                <td>{{ $item->name }}</td>
-                                <td>{{ $item->email }}</td>
-                                <td>{{ $item->phone->phone }}</td>
+                                <td>{{ $item->user_id }}</td>
+                                <td>{{ $item->phone}}</td>
+                                <td>{{ $item->user->name }}</td>
+                                <td>{{ $item->user->email }}</td>
+                                
                               </tr>
                             @endforeach
                           

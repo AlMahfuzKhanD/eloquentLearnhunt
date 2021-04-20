@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 // Route::get('/phone','PhoneController@index')->name('phone');
-Route::get('/users','UserController@index')->name('user');
+// Route::get('/users','UserController@index')->name('user');
+Route::get('/users','PhoneController@index')->name('user');
