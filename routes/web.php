@@ -17,3 +17,4 @@ Route::get('/', function () {
 // Route::get('/phone','PhoneController@index')->name('phone');
 // Route::get('/users','UserController@index')->name('user');
 Route::get('/users','PhoneController@index')->name('user');
+Route::get('/post','PostController@index')->name('posts');

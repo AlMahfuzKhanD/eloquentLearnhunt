@@ -14,4 +14,11 @@ class User extends Model
     public function phone(){
         return $this->hasOne('App\Phone');
     }
+
+    /**
+     * Get the user that owns the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    
 }
