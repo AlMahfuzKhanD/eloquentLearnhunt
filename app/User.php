@@ -20,5 +20,9 @@ class User extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+
+    public function post(){
+        return $this->hasMany('App\Post');
+    }
     
 }
